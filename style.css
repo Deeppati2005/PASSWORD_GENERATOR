@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* Custom Properties */
+/* -------------------------------------- */
+
+:root {
+  --clr-primary-400: hsl(223, 36%, 37%);
+  --clr-secondary-400: hsl(32, 81%, 54%);
+  --clr-neutral-900: hsla(212, 21%, 14%, 0.62);
+  --clr-nautral-100: hsl(0, 0%, 100%);
+  --ff-base: "Muli", sans-serif;
+}
+
+/* Reset */
+/* -------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
+input {
+  outline: 0;
+  border: 0;
+}
+
+input[type="checkbox"] {
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}
+
+/* General styling */
+/* ------------------------------------- */
+
+body {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-nautral-100);
+  font-family: var(--ff-base);
+  padding: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--clr-secondary-400);
+  box-shadow: 0px 2px 0.5em rgba(0, 0, 0, 0.3);
+  padding: 1.2em;
+  border-radius: 0.5em;
+  width: 35em;
+  max-width: 100%;
+}
+
+.result-container {
+  background-color: var(--clr-neutral-900);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  padding: 1em;
+  border-radius: 0.5em;
+  height: 3.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.result-container .btn {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.2em;
+  margin-top: 0.1em;
+}
+
+.btn {
+  border: none;
+  color: var(--clr-nautral-100);
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.2em;
+  background-color: var(--clr-primary-400);
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1.1rem;
+  margin-top: 4em;
+}
+
+.setting {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
